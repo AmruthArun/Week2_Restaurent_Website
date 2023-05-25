@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty_food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.csss" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+
+<body>
+    <header id="header-home" class="bg-warning" style="position: sticky;">
+        <div class="container">
+            <div class="row text-white d-flex ">
+                <div class="col-md-4 pt-4 d-flex head-icon-text text-center ">
+                    <i class="material-icons" style="font-size:74px;color:red">restaurant</i>
+                    <!-- <a href="#"> <img src="images/images.jpg"> </a> -->
+                    <h2 class="mt-3" ><a href="index.html" class="text-decoration-none text-dark ml-3  fw-bold">TASTY
+                            FOODS</a> </h2>
+                </div>
+                <div class="col-md-8 p-4 nav-div ">
+
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse list-div justify-content-around"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active fs-4 " aria-current="page"
+                                            href="#header-home">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-4 " aria-current="page" href="#specials">SPECIALS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-4  " aria-current="page" href="#about">ABOUT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-4 " href="#menu">MENU</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-4 " aria-current="page" href="#contact">CONTACT</a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-danger" type="button" onclick="orderNowClick()">Order Now</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="w-100">
+        <div class="bg-dark w-100">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/chicken-skewers-with-slices-sweet-peppers-dill.jpg" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Our chefs cooks love!</h2>
+                            <p>We guarentee delicious food served with love</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/traditional-indian-soup-lentils.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Authentic Indian Food</h2>
+                            <p>No one serves better indian food than us in south india</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="/images/chicken-rice-other-food.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Always homely</h2>
+                            <p>just like how moms do</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="specials" class="w-100 bg-light ">
+            <section class="bg-dark">
+                <div class="container bg-dark">
+                    <br />
+                    <div class="text-center mt-5 text-white">
+                        <h2 class="h2 uppercase mb-4 text-blue fw-bold" >Today's Special Menu</h2>
+                    </div>
+                    <br />
+                    <div class="col-md-12  p-2 ">
+
+                        <div class="responsive">
+                            <div>
+                                <img class="sliding-images col-lg-12 " src="images/circle-images/d-imgs (1).webp"
+                                    alt="">
+                            </div>
+                            <div>
+                                <img class="sliding-images col-lg-12 " src="images/circle-images/d-imgs (2).webp"
+                                    alt="">
+                            </div>
+                            <div>
+                                <img class="sliding-images col-lg-12 " src="images/circle-images/d-imgs (3).webp"
+                                    alt="">
+                            </div>
+                            <div>
+                                <img class="sliding-images col-lg-12 " src="images/circle-images/d-imgs (4).webp"
+                                    alt="">
+                            </div>
+                            <div>
+                                <img class="sliding-images col-lg-12 " src="images/circle-images/d-imgs (5).webp"
+                                    alt="">
+                            </div>
+                            <div>
+                                <img class="sliding-images col-lg-12 " src="images/circle-images/d-imgs (6).webp"
+                                    alt="">
+                            </div>
+                            <div>
+                                <img class="sliding-images col-lg-12 " src="images/circle-images/d-imgs (7).webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="about" class="container mb-0">
+        <div class="row">
+            <div class="col-lg-6 img-fluid">
+                <img src="images/chicken-kal.png" class="image container " alt="">
+            </div>
+            <div class="col-lg-6 mt-5 p-4 ">
+                <h1 class="mb-3 fw-bold" id="tasty-food" onmouseover="mouseOver()" onmouseout="mouseOut()"> About Tasty Food</h1>
+                <p>"Tasty Food, an oriental cuisine restaurant is one of Bangalore’s fastest-growing QSR (Quick service
+                    restaurant). The penchant for food and the passion of three motivated individuals reflected on the
+                    two decades of experience with quality control, service, and customer rapport in the food business.
+                    Tasty foods’s vision is to extend the authentic taste of the eastern kitchen to the taste buds,
+                    through every unique dish on our menu."</p>
+                <p>Our family of qualified chefs and service staff always strive to ensure that every dish served is
+                    served with love. With a boastful menu of more than 400 varieties ranging from soups, starters, main
+                    courses, and desserts mastered by our very skilled master chefs, we can assure that you will be
+                    spoilt for choice. Every order freshly prepared comes from our modern hygienic kitchens using the
+                    highest quality ingredients ensuring an authentic Chinese food experience.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="menu">
+        <div class="text-center m-5 text-dark">
+            <h1 class="h1 uppercase mb-4 text-blue fw-bold " >Our Menu</h1>
+        </div>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top card_images" src="/images/cards/1_biriyani.avif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger text-center">HYDERABADI BIRIYANI</h5>
+                            <p class="card-text">It is a style of biryani originating from Hyderabad, India made with
+                                basmati rice and meat.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted"><button type="button " class="btn btn-danger ">ORDER
+                                    NOW</button></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top card_images" src="/images/cards/2_wraps.avif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger text-center">WRAPS</h5>
+                            <p class="card-text">A wrap is a culinary dish made with a soft flatbread rolled around a
+                                filling.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted"><button type="button " class="btn btn-danger ">ORDER
+                                    NOW</button></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top card_images" src="/images/cards/3_dosa.avif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger text-center">DOSA</h5>
+                            <p class="card-text">very tasty crispy dosa.It is a authentic southindian dish with chutnies
+                            </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted"><button type="button " class="btn btn-danger ">ORDER
+                                    NOW</button></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top card_images" src="/images/cards/4_biryani_donne.avif"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger text-center">NORTH INDIAN BIRIYANI</h5>
+                            <p class="card-text">It is a popular rice dish that originated in the northern regions of
+                                India, such as Punjab, and Delhi.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted"><button type="button " class="btn btn-danger ">ORDER
+                                    NOW</button></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top card_images" src="/images/cards/5_burger.avif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger text-center">BURGER</h5>
+                            <p class="card-text">It is a popular sandwich made with a patty of ground meat, typically
+                                beef, that is usually served in a sliced bun.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted"><button type="button " class="btn btn-danger ">ORDER
+                                    NOW</button></small>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top card_images" src="/images/cards/6_pizza_shop.avif"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger text-center">PIZZA</h5>
+                            <p class="card-text">Pizza is a delicious and versatile dish that originated in Italy but
+                                has become popular worldwide.Cheesy one </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted"><button type="button " class="btn btn-danger ">ORDER
+                                    NOW</button></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top card_images" src="/images/cards/7_noodles.avif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger text-center">NOODLES</h5>
+                            <p class="card-text">Food in many cuisines around the world, with different variations and
+                                preparations depending on the culture</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted"><button type="button " class="btn btn-danger ">ORDER
+                                    NOW</button></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top card_images" src="/images/cards/8_cakes.avif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger text-center">CAKES</h5>
+                            <p class="card-text">It is a chocolate cake.It is very soft.It is a Must try dessert. Many
+                                flavors are available in our all shops.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted"><button type="button " class="btn btn-danger ">ORDER
+                                    NOW</button></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h1 class="fw-bold text-center mt-5 mb-3 " >Contact Us..</h1>
+            <form class="row border border-danger mt-5 p-5 bg-dark" name="contactForm" id="contactForm" method="post"
+            action=""
+                onsubmit="return validateForm()">
+                <div class="col-md-6 ">
+                    <label class="form-label text-white fw-bold">First Name</label>
+                    <input type="text" name="firstName" class="form-control" id="firstName"
+                        placeholder="Enter the First Name" >
+                    <span id="firstName-error" class="error-message"></span>
+                </div>
+                <div class="col-md-6 ">
+                    <label class="form-label text-white fw-bold">Last Name</label>
+                    <input type="text" name="lastName" class="form-control" id="lastName"
+                        placeholder="Enter the last Name" >
+                    <span id="lastName-error" class="error-message"></span>
+                </div>
+                <div class="col-md-8 ">
+                    <label class="form-label text-white fw-bold mt-3">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="hello@gmail.com"
+                        >
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div class="col-md-4 ">
+                    <label class="form-label text-white fw-bold mt-3">Phone Number</label>
+                    <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="+91"
+                        >
+                    <span id="phoneNumber-error" class="error-message"></span>
+                </div>
+                <div class="col-md-12 ">
+                    <label class="form-label text-white fw-bold fw-bold mt-3">Comments,Questions ?</label>
+                    <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                    <span id="message-error" class="error-message"></span>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button id="btnclick" type="submit" class="btn btn-danger mt-3 ">Submit</button>
+                    <span id="btn-error"></span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <section id="menu2">
+            <div class="bg-warning ">
+                <div class="container bg-warning text-white">
+                    <footer class="pt-4 my-md-5 pt-md-5 border-top ">
+                        <div class="row justify-content-around">
+                            <div class="col-12 col-lg-4 col-md text-dark  ">
+                                <a href="" class="text-decoration-none text-dark">
+                                    <h5 class="fw-bold fs-3 ">Menu</h5>
+                                </a>
+                                <ul class="list-unstyled text-small ">
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">Special</a></li>
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">North Indian</a></li>
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">South Indian</a></li>
+
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">Continental</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md  ">
+                                <a href="" class="text-decoration-none text-dark">
+                                    <h5 class="fw-bold fs-3">Categories</h5>
+                                </a>
+                                <ul class="list-unstyled text-small t">
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">Vegan</a></li>
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">Veg</a></li>
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">Eggatarian</a></li>
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">Non-Veg</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md text-dark">
+                                <a href="" class="text-decoration-none text-dark">
+                                    <h5 class="fw-bold fs-3">About</h5>
+                                </a>
+                                <ul class="list-unstyled text-small ">
+                                    <li><a class="text-muted text-decoration-none fs-5 " href="#">Vision</a></li>
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">Chef</a></li>
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">Locations</a></li>
+                                    <li><a class="text-muted text-decoration-none fs-5" href="#">Quality</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="row d-flex text-center">
+                            <div class="col-lg-6 col-12  col-md  ">
+                                <i class="material-icons" style="font-size:60px;color:red">restaurant</i>
+                                <a href="" class="text-decoration-none"></a>
+                                <p class=" mb-3 text-muted foot-rest-name fw-bold text-dark">Tasty foods</p></a>
+                            </div>
+                            <div class="social-connect col-lg-6 col-12  col-md">
+
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/tastyfoods/"><img src="images/social-icons/facebook.png"></a>
+                                    <a href="https://instagram.com/tastyfoods"><img src="images/social-icons/instagrame.png"></a>
+                                    <a href="https://twitter.com/tastyfoods"><img src="images/social-icons/twitter.png"></a>
+                                    <a href="https://www.youtube.com/tastyfoods"><img src="images/social-icons/youtube.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
